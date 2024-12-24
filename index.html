@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .btns {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .btns button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btns button:hover {
+            background-color: #0056b3;
+        }
+        #div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px;
+            padding: 10px;
+        }
+        #card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px; 
+            transition: transform 0.3s;
+        }
+        #card:hover {
+            transform: translateY(-5px);
+        }
+        h3 {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <button onclick="han(this)">Home</button>
+        <button onclick="check(this)">Electronics</button>
+        <button onclick="check(this)">Furniture</button>
+        <button onclick="check(this)">Accessories</button>
+        <button onclick="check(this)">Footwear</button>
+        <button onclick="check(this)">Fitness</button>
+        <button onclick="check(this)">Home Appliances</button>
+    </div>
+    <div id="div"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
